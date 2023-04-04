@@ -1,0 +1,15 @@
+// Function to alert user with age limit message and record time, date and age
+function ageLimitAlert(age) {
+    // Check if age is a valid number
+    if (isNaN(age)) {
+        return "Invalid input, please provide clear instructions.";
+    }
+    // Get current date and time
+    let date = new Date();
+    let time = date.getTime();
+    let dateString = date.toLocaleString();
+    // Alert user with age limit message
+    alert(`You can't go there! Your age is ${age}`);
+    // Log time, date and age
+    console.log(`Time: ${time}, Date: ${dateString}, Age: ${age}`);
+}
